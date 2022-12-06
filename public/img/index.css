@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+body {
+  background: #fff;
+  color: #222;
+  padding: 50px 140px;
+}
+
+.hero-page__header {
+  width: 100%;
+}
+
+.shop-cart-button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: color, transform 500ms ease;
+}
+
+.shop-cart-button:hover,
+.active-button {
+  color: #7acb3b;
+  transform: scale(1.5);
+}
+
+.hero-page__logo {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.hero-page__navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  width: 400px;
+}
+
+.navbar__item {
+  cursor: pointer;
+}
+
+.navbar__item:hover {
+  opacity: 0.6;
+  transition: opacity 500ms ease;
+}
+
+.hero-page {
+  position: relative;
+  margin: 2rem 0;
+  background: url("./img/background.png") no-repeat fixed center;
+  /* background-blend-mode: multiply;
+  background-color: rgb(213, 232, 232); */
+  height: 500px;
+  display: block;
+  background-size: cover;
+}
+
+.hero-page::after {
+  position: absolute;
+  content: "Страшненькие домашние десерты";
+  top: 40px;
+  left: 20px;
+  width: 400px;
+  font-size: 40px;
+  font-weight: 600;
+  color: white;
+}
+
+.hero-page::before {
+  position: absolute;
+  content: "Под любой праздник";
+  top: 200px;
+  left: 20px;
+  width: 400px;
+  font-size: 40px;
+  font-weight: 300;
+  color: rgb(191, 43, 169);
+}
+
+.hero-page__item {
+  /* width: 30%; */
+  width: 300px;
+  margin-bottom: 50px;
+
+  background: #f5f5f5;
+  overflow: hidden;
+}
+
+.button__add-to-cart {
+}
+
+.item-img {
+  width: 100%;
+  background-size: cover;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+  transition: 500ms ease;
+}
+
+.item-img:hover {
+  transform: scale(1.1);
+}
+
+.img-wrapper {
+  overflow: hidden;
+  height: 250px;
+  width: 100%;
+}
+
+main {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card-info {
+  padding: 10px 20px;
+}
+
+.item-title,
+.item-description,
+.item-price,
+.button__add-to-cart {
+  margin-top: 20px;
+  color: #333;
+}
+
+.item-price {
+  color: rgb(15, 96, 15);
+}
+
+.button__add-to-cart {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  /* display: inline-block; */
+  font-size: 16px;
+  width: 40px;
+  /* margin: 4px 2px; */
+  cursor: pointer;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: transform 500ms ease;
+}
+
+.button__add-to-cart:hover {
+  transform: scale(1.15);
+}
+
+.price-add-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  position: relative;
+}
+
+.shop-cart {
+  position: absolute;
+  z-index: 2;
+  top: 30px;
+  right: 0;
+  width: 450px;
+  min-height: 100px;
+  background: rgb(221, 217, 217);
+  box-shadow: 6px 8px 5px 2px rgba(96, 96, 96, 0.75);
+  -webkit-box-shadow: 6px 8px 5px 2px rgba(96, 96, 96, 0.75);
+  -moz-box-shadow: 6px 8px 5px 2px rgba(96, 96, 96, 0.75);
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+.order-item-img {
+  margin-left: 10px;
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+}
+
+footer {
+  text-align: center;
+  margin: 10px;
+}
