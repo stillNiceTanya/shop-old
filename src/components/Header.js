@@ -12,6 +12,7 @@ export default function Header(props) {
           <Order
             key={el.id}
             item={el}
+            onDelete={props.onDelete}
           ></Order>
         ))}
       </div>

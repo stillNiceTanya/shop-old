@@ -150,22 +150,30 @@ header {
   color: rgb(47, 136, 47);
 }
 
-.button__add-to-cart {
+.button {
   padding: 10px;
-  width: 40px;
-  background-color: #4caf50;
-  border: none;
   color: white;
   text-align: center;
   text-decoration: none;
-  font-size: 16px;
-  cursor: pointer;
   border-radius: 12px;
   font-weight: 600;
+  border: none;
+  cursor: pointer;
   transition: transform 500ms ease;
 }
 
-.button__add-to-cart:hover {
+.button__delete-item {
+  background-color: #e05b40;
+}
+
+.button__add-to-cart {
+  width: 40px;
+  background-color: #4caf50;
+  font-size: 16px;
+}
+
+.button__add-to-cart:hover,
+.button__delete-item:hover {
   transform: scale(1.15);
 }
 
@@ -183,7 +191,7 @@ header {
   top: 90px;
   right: 0;
   width: 450px;
-  background: rgb(242, 238, 238);
+  background: rgb(244, 242, 242);
   box-shadow: 6px 8px 5px 2px rgba(96, 96, 96, 0.75);
   -webkit-box-shadow: 6px 8px 5px 2px rgba(96, 96, 96, 0.75);
   -moz-box-shadow: 6px 8px 5px 2px rgba(96, 96, 96, 0.75);
@@ -202,6 +210,7 @@ header {
   height: 50px;
   width: 50px;
   object-fit: cover;
+  border-radius: 12px;
 }
 
 .order-item__title {

@@ -16,7 +16,7 @@ class Item extends Component {
           <div className="price-add-card">
             <p className="item-price">{this.props.item.price}</p>
             <button
-              className="button__add-to-cart"
+              className="button button__add-to-cart"
               onClick={() => this.props.onAdd(this.props.item)}
             >
               +

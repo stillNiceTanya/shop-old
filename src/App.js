@@ -51,22 +51,26 @@ class App extends React.Component {
         },
       ],
     };
-    this.AddToOrder = this.AddToOrder.bind(this);
+    this.addToOrder = this.addToOrder.bind(this);
+    this.deleteFromOrder = this.deleteFromOrder.bind(this);
   }
 
   render() {
     return (
       <div className="wrapper">
-        <Header orders={this.state.orders}></Header>
+        <Header
+          onDelete={this.deleteFromOrder}
+          orders={this.state.orders}
+        ></Header>
         <Items
           items={this.state.items}
-          onAdd={this.AddToOrder}
+          onAdd={this.addToOrder}
         ></Items>
         <Footer></Footer>
       </div>
     );
   }
-  AddToOrder(item) {
+  addToOrder(item) {
     let isInOrder = false;
     this.state.orders.forEach((el) => {
       if (el.id === item.id) {
@@ -77,6 +81,10 @@ class App extends React.Component {
       this.setState({
         orders: [...this.state.orders, item],
       });
+  }
+
+  deleteFromOrder(id) {
+    this.setState({ orders: this.state.orders.filter((el) => el.id !== id) });
   }
 }
 
