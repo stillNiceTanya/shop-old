@@ -20,8 +20,8 @@ export default function Header(props) {
 
   const showEmptyCart = () => {
     return (
-      <div className="empty-cart">
-        <h3>Корзина пуста</h3>
+      <div className="empty-order">
+        <h4>Корзина пуста</h4>
       </div>
     );
   };
@@ -29,7 +29,7 @@ export default function Header(props) {
   return (
     <header className="hero-page__header">
       <div className="hero-page__navbar">
-        <div className="hero-page__logo">Shop's logo</div>
+        <h1 className="hero-page__logo">Страшненькие домашние торты</h1>
         <ul className="navbar">
           <li>
             <div
@@ -45,7 +45,7 @@ export default function Header(props) {
           <li className="navbar__item">Кабинет</li>
         </ul>
         {cartOpen && (
-          <div className="shop-cart">
+          <div className="shop-order">
             {props.orders.length > 0 ? showOrder(props) : showEmptyCart()}
           </div>
         )}

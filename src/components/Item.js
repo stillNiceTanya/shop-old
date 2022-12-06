@@ -4,13 +4,13 @@ class Item extends Component {
   render() {
     return (
       <div className="hero-page__item">
-        <div className="img-wrapper">
+        <div className="item-img-wrapper">
           <img
             className="item-img"
             src={this.props.item.img}
           />
         </div>
-        <div className="card-info">
+        <div className="card-info-wrapper">
           <h2 className="item-title">{this.props.item.title}</h2>
           <p className="item-description">{this.props.item.description}</p>
           <div className="price-add-card">
