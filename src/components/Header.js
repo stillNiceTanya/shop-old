@@ -6,6 +6,8 @@ export default function Header(props) {
   let [cartOpen, setCartOpen] = useState(false);
 
   const showOrder = (props) => {
+    let summa = 0;
+    props.orders.forEach((el) => (summa += Number(el.price)));
     return (
       <div>
         {props.orders.map((el) => (
@@ -15,6 +17,8 @@ export default function Header(props) {
             onDelete={props.onDelete}
           ></Order>
         ))}
+
+        <h3 className="order-amount">К оплате: ${summa}</h3>
       </div>
     );
   };

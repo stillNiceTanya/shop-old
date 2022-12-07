@@ -15,7 +15,7 @@ class App extends React.Component {
           description: "description description description",
           img: "./img/cake.jpeg",
           category: "cakes",
-          price: "$35",
+          price: "35",
         },
         {
           id: 2,
@@ -23,7 +23,7 @@ class App extends React.Component {
           description: "description description description",
           img: "./img/capecakess.jpeg",
           category: "cupcake",
-          price: "$12",
+          price: "12",
         },
         // {
         //   id: 3,
@@ -39,7 +39,7 @@ class App extends React.Component {
           description: "description description description",
           img: "./img/choco.jpeg",
           category: "pastry",
-          price: "$10",
+          price: "10",
         },
         {
           id: 5,
@@ -47,7 +47,7 @@ class App extends React.Component {
           description: "description description description",
           img: "./img/cookies.jpeg",
           category: "pastry",
-          price: "$8",
+          price: "8",
         },
       ],
     };

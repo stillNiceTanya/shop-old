@@ -9,7 +9,7 @@ export class Order extends Component {
           src={this.props.item.img}
         />
         <h2 className="order-item__title">{this.props.item.title}</h2>
-        <p className="order-item__price">{this.props.item.price}</p>
+        <p className="order-item__price">${this.props.item.price}</p>
         <>
           <button
             className="button button__delete-item"

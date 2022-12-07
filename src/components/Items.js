@@ -6,10 +6,9 @@ export class Items extends Component {
     return (
       <main>
         {this.props.items.map((el) => (
-          <h2>
+          <h2 key={el.id}>
             <Item
               item={el}
-              key={el.id}
               onAdd={this.props.onAdd}
             ></Item>
           </h2>
