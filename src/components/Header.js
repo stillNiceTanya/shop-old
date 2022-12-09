@@ -7,7 +7,7 @@ export default function Header(props) {
 
   const showOrder = (props) => {
     let summa = 0;
-    props.orders.forEach((el) => (summa += Number(el.price)));
+    props.orders.forEach((el) => (summa += Number.parseFloat(el.price)));
     return (
       <div>
         {props.orders.map((el) => (

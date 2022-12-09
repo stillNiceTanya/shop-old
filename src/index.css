@@ -14,6 +14,7 @@ body {
 }
 
 main {
+  /* position: relative; */
   display: flex;
   width: 100%;
   flex-wrap: wrap;
@@ -122,6 +123,7 @@ header {
   object-fit: cover;
   border-radius: 5px 5px 0 0;
   transition: 500ms ease;
+  cursor: pointer;
 }
 
 .item-img:hover {
@@ -136,6 +138,7 @@ header {
 
 .card-info-wrapper {
   padding: 10px 15px;
+  cursor: pointer;
 }
 
 .item-title,
@@ -183,7 +186,7 @@ header {
   align-items: center;
 }
 
-/* CART AND POP UP */
+/* ORDER */
 
 .shop-order {
   position: absolute;
@@ -234,6 +237,47 @@ header {
   width: 100%;
   font-size: 20px;
   color: #048c41;
+}
+
+/* CATEGORY FILTER ITEMS */
+
+.category-filter {
+  display: inline-block;
+  background-color: #f2f2f2;
+  border-radius: 50px;
+  padding: 10px 20px;
+  margin-bottom: 25px;
+  margin-right: 15px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 500ms ease;
+}
+
+.category-filter:hover {
+  border-color: silver;
+  transform: scale(1.12);
+}
+
+/* POP-UP */
+
+.popup-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(53, 49, 49, 0.486);
+  z-index: 3;
+  overflow: auto;
+}
+
+.popup {
+  width: 400px;
+  position: relative;
+  margin: 7% auto;
+  padding: 40px 30px;
+  background: #fff;
+  border-radius: 10px;
 }
 
 /* FOOTER */

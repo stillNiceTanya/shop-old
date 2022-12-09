@@ -10,6 +10,7 @@ export class Items extends Component {
             <Item
               item={el}
               onAdd={this.props.onAdd}
+              onShowItem={this.props.onShowItem}
             ></Item>
           </h2>
         ))}
